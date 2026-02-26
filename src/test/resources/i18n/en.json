@@ -1,0 +1,40 @@
+{
+  "homePage": {
+    "products": "PRODUCTS",
+    "collections": "COLLECTIONS",
+    "deals": "DEALS",
+    "inspiration": "INSPIRATION",
+    "store": "Find a store",
+    "faq": "COLLECTIONS",
+    "pfas": "PFAS-free cookware",
+    "about": "About Beka",
+    "title": "Embrace every kitchen moment"
+  },
+  "productPage": {
+    "title": "ALL BEKA PRODUCTS",
+    "sets": "Sets",
+    "pots": "Pots",
+    "frying": "Frying",
+    "saucepans": "Saucepans",
+    "skillets": "Skillets",
+    "oven": "Oven",
+    "kitchenTools": "Kitchen tools",
+    "specialityCookware": "Speciality cookware",
+    "accessoires": "Accessoires",
+    "teaCoffe": "Tea and coffee",
+    "productCountMessage": "223 products found"
+  },
+  "searchPage": {
+    "searchResultTitle": "SEARCH RESULTS",
+    "searchTextFound": "CHEF FRYING PAN",
+    "searchTextNotFound": "78jj",
+    "searchResultFoundMessage":"results found for",
+    "searchResultNotFoundMessage":"0 results found for"
+  },
+  "cartPage": {
+    "productRequired": "ENERGY NON-STICK PANCAKE PAN",
+    "errorMessageWhenLimitExceed": "Only 40 items were added to your cart due to availability.",
+    "errorMessageAddCartButtonClickedLmtExceed": "The maximum quantity of this item is already in your cart.",
+    "addToCart10": "10"
+  }
+}

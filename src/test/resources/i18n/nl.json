@@ -1,0 +1,40 @@
+{
+  "homePage": {
+    "products": "PRODUCTEN",
+    "collections": "COLLECTIES",
+    "deals": "PROMOTIES",
+    "inspiration": "INSPIRATIE",
+    "store": "Verkooppunten",
+    "faq": "FAQ",
+    "pfas": "PFAS-vrij koken",
+    "about": "Over Beka",
+    "title":"Omarm elk keukenmoment"
+  },
+  "productPage": {
+    "title": "ALLE BEKA PRODUCTEN",
+    "sets": "Sets",
+    "pots": "Potten",
+    "frying": "Pannen",
+    "saucepans": "Steelpannen",
+    "skillets": "Sauteerpannen",
+    "oven": "Oven",
+    "kitchenTools": "Keukenhulpen",
+    "specialityCookware": "Keukengerei",
+    "accessoires": "Accessoires",
+    "teaCoffe": "Thee & koffie",
+    "productCountMessage": "Er zijn 223 producten gevonden"
+  },
+  "searchPage": {
+  "searchResultTitle": "ZOEKEN",
+  "searchTextFound": "CHEF BRAADPAN",
+    "searchTextNotFound": "78jj",
+    "searchResultFoundMessage":"resultaten gevonden voor",
+    "searchResultNotFoundMessage":"0 resultaten gevonden voor"
+},
+  "cartPage": {
+    "productRequired": "ENERGY ANTIKLEEF PANNENKOEKENPAN",
+    "errorMessageWhenLimitExceed": "Er zijn slechts 40 artikelen aan je winkelwagen toegevoegd vanwege beschikbaarheid.",
+    "errorMessageAddCartButtonClickedLmtExceed": "De maximale hoeveelheid van dit artikel zit al in je winkelwagen.",
+    "addToCart10": "10"
+  }
+}
