@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.LanguageManager;
 
+import java.util.List;
+
 public class ProductPage extends HomePage {
 
     private WebDriver driver;
@@ -46,11 +48,11 @@ public class ProductPage extends HomePage {
     private WebElement productOven;
 
     public String getProductTitle() {
-        return productTitle.getText();
+        return productTitle.getText().trim();
     }
 
     public String getProductSetsTitle() {
-        return productSets.getText();
+        return productSets.getText().trim();
     }
 
     public String getProductPotsTitle() {
@@ -76,7 +78,11 @@ public class ProductPage extends HomePage {
         return productOven.getText().trim();
     }
 
-    public void setup() {
-        LanguageManager.loadLanguage("en");
+    /***************Validations for images***************/
+    @FindBy(xpath = "//div[@class='product__image']//img")
+    private List<WebElement> productImages;
+
+    public List<WebElement> getProductImages() {
+        return productImages;
     }
 }

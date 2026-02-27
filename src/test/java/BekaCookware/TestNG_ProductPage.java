@@ -1,11 +1,14 @@
 package BekaCookware;
 
+        import org.openqa.selenium.WebElement;
         import org.testng.Assert;
         import org.testng.annotations.*;
         import pages.*;
         import utilities.*;
 
         import org.openqa.selenium.WebDriver;
+
+        import java.util.List;
 
 public class TestNG_ProductPage {
 
@@ -50,8 +53,30 @@ public class TestNG_ProductPage {
 
     }
 
+    @Test(description = "Validating the image source is not empty")
+    public void validateAllProductImagesHaveSrc()
+    {
+        ProductPage productPage = new ProductPage(driver);
 
-       @AfterMethod
+        List<WebElement> images = productPage.getProductImages();
+
+        Assert.assertTrue(images.size() > 0,
+                "No product images found");
+
+        for (WebElement image : images) {
+
+            String src = image.getAttribute("src");
+
+            Assert.assertNotNull(src, "Image src is null");
+            Assert.assertFalse(src.trim().isEmpty(),
+                    "Image src is empty");
+
+            System.out.println("Validated image: " + src);
+        }
+    }
+
+
+       @AfterSuite
     public void tearDown() {
         DriverManager.quitDriver();
     }
