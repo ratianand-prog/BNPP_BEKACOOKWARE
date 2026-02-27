@@ -35,6 +35,7 @@
     "productRequired": "ENERGY NON-STICK PANCAKE PAN",
     "errorMessageWhenLimitExceed": "Only 40 items were added to your cart due to availability.",
     "errorMessageAddCartButtonClickedLmtExceed": "The maximum quantity of this item is already in your cart.",
-    "addToCart10": "10"
+    "addToCart10": "10",
+    "removeFromCartProduct":"Cicla frying pan"
   }
 }

@@ -35,6 +35,8 @@
     "productRequired": "ENERGY ANTIKLEEF PANNENKOEKENPAN",
     "errorMessageWhenLimitExceed": "Er zijn slechts 40 artikelen aan je winkelwagen toegevoegd vanwege beschikbaarheid.",
     "errorMessageAddCartButtonClickedLmtExceed": "De maximale hoeveelheid van dit artikel zit al in je winkelwagen.",
-    "addToCart10": "10"
+    "addToCart10": "10",
+    "removeFromCartProduct":"Cicla frying pan"
+
   }
 }
