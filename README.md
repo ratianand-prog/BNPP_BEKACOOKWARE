@@ -83,7 +83,7 @@ Contains TestNG test classes:
 
 Tests are grouped and can be executed as:
 - Smoke
-- Regression
+- API
 - Full Suite
 
 ---
@@ -155,6 +155,7 @@ ________________________________________
 •	CI/CD integration
 •	API + UI combined validation
 •	Enhance reusalibilty
+•	More negative scenarios
 ________________________________________
 👤 Author
 Automation Engineer : Rati Anand Khatri
