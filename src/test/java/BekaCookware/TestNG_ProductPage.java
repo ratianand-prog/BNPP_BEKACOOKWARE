@@ -3,6 +3,7 @@ package BekaCookware;
         import org.openqa.selenium.WebElement;
         import org.testng.Assert;
         import org.testng.annotations.*;
+        import org.testng.asserts.SoftAssert;
         import pages.*;
         import utilities.*;
 
@@ -60,20 +61,30 @@ public class TestNG_ProductPage {
 
         List<WebElement> images = productPage.getProductImages();
 
-        Assert.assertTrue(images.size() > 0,
+        SoftAssert softAssert = new SoftAssert();
+
+        softAssert.assertTrue(images.size() > 0,
                 "No product images found");
 
-        for (WebElement image : images) {
+        for (int i = 0; i < images.size(); i++) {
 
+            WebElement image = images.get(i);
             String src = image.getAttribute("src");
 
-            Assert.assertNotNull(src, "Image src is null");
-            Assert.assertFalse(src.trim().isEmpty(),
-                    "Image src is empty");
+            softAssert.assertNotNull(src,
+                    "Image " + i + " src is null");
 
-            System.out.println("Validated image: " + src);
+            softAssert.assertFalse(
+                    src == null || src.trim().isEmpty(),
+                    "Image " + i + " src is empty"
+            );
+
+            System.out.println("Validated image: " + i);
         }
+
+         softAssert.assertAll();//This has to be added to ensure that the test fails in case image is missing
     }
+
 
 
        @AfterSuite
